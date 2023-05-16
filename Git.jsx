@@ -145,5 +145,5 @@ develop branch does not know that multiply.js was even created and some work was
 
 for merging files develop and mayank/multiply
 ---------------------------------------------
-- git merge mayank/multiply
+- git merge mayank/multiply => multiply.js has been added and all the insertions are there in it as well 
 */
