@@ -31,6 +31,7 @@ for creating git file
 - clear => for clearing data
 - cd "Web Development" => Space taken inside the quotes singlr or double
 - cd developemnt => without in quotes beacuse there is no space in the spacific folder
+- ctrl + c => to out from the new terminal.
 
 example :-
 cd d: 
@@ -101,4 +102,33 @@ initial commit
 
 example - git commit -m "message added in file."
 
+if you want to go to first commit, when initial commit was done for that we use checkout command
+- git checkout hashcode_name => give you a first commit.
+- git checkout master => give you back to the master and all the files are recovered.
+
+- git branch => give you the initial master branch, and now you can make multiple branches
+example - git branch 
+(HEAD detached at 6b0aa29)
+- git log 
+6b0aa29 (head)
+- git master 
+master
+- git log
+head to master
+-------------------------------------------------------------------
+Master Branch ---> Develop Branch
+master branch is the main branch you can make multiple branches from it.
+
+- git branch branch_name => for making a branch in master branch
+example - git branch develop
+- git branch
+=> gives us two branches - develop and master
+- git checkout develop => switch to branch develop
+
+- git checkout -b branch_name => for this you can make branch as well as you checked out.
+example - git checkout -b mayank/multiply => here branch name is person_name/task_performed_by_him
+- git status
+modified files :- Git.jsx and sum.js
+untracked file :- multiply.js
+not staged :- Git.jsx
 */
