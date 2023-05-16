@@ -131,4 +131,11 @@ example - git checkout -b mayank/multiply => here branch name is person_name/tas
 modified files :- Git.jsx and sum.js
 untracked file :- multiply.js
 not staged :- Git.jsx
+
+- git add multiply.js
+- git commit -m "message added this file"
+- git add Git.jsx
+- git status
+
+16:05min
 */
