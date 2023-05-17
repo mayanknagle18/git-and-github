@@ -191,7 +191,12 @@ for push the git
 Now some changes in the file and than push
 ------------------------------------------
 1. Change the codes in the file.
-2. 
+2. - git add file_name
+3. - git commit -m "add multiply with template literal"
+4. - git push
+we will simply do git push and then by default its origin and master so we don't need to write it.
+
+All the data is pushed inside the git repository 
 
 
 Question - 
