@@ -146,4 +146,61 @@ develop branch does not know that multiply.js was even created and some work was
 for merging files develop and mayank/multiply
 ---------------------------------------------
 - git merge mayank/multiply => multiply.js has been added and all the insertions are there in it as well 
+
+- git ignore => so you want that some files should enter the git ecosystem, git shouldnt track them. file should have .gitignore
+
+two ways to create
+------------------
+write in git bash or make a file .gitignore 
+- touch .gitignore
+- make a file as a new file .gitignore
+
+so here gitignore file will be created and all the files and folders that will be written in it git will ignore them. 
+
+example - write git.txt in .gitignore file than it will ignore in the git ecosystem.
+
+Git Hub
+-------
+You are also to do open source contibution with its help because the code in it is hosted in a remote repository.
+And multiple people can view and contribute towards your code. If you want you can either make public or a private repository.
+who shouldn't be accessed by anyone ecept you or your contributors.
+
+create a new repository
+-----------------------
+1. Make a New Repository.
+- For making new repository in git bash
+
+echo "# git-and-github" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/mayanknagle18/git-and-github.git
+git push -u origin main
+
+2. write in git bash
+- git remote -v 
+- git remote add origin https://github.com/mayanknagle18/git-and-github.git
+- git remote -v 
+
+this is the origin to fetch and push. And this the same origin that I have made. This is now remote and we'll be doing all the push and pull inside it.
+for push the git
+- git branch -M main
+- git push -u origin main
+
+Now some changes in the file and than push
+------------------------------------------
+1. Change the codes in the file.
+2. 
+
+
+Question - 
+----------
+If this error occured than how to fix it?
+- fatal: Unable to create 'D:/Web Development/Git and GitHub/.git/index.lock': File exists.
+Answer -
+--------
+rm -f ./.git/index.lock
+than add modified files by - git add file_name
+
 */
