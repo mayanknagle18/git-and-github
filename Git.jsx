@@ -196,8 +196,83 @@ Now some changes in the file and than push
 4. - git push
 we will simply do git push and then by default its origin and master so we don't need to write it.
 
-All the data is pushed inside the git repository 
+All the data is pushed inside the git repository
 
+if we want to push master branch than
+---------------------------------------
+- git checkout master
+- git push -u origin master
+
+you want multiple people should work in a project, there are 2 ways for it. either do open source or you want that other person be able to change in this code, then you can add the collaborators.
+
+- to add collaborators
+----------------------
+settings -> manage access -> add people (they got mail to accept)
+- so he is also added as a collaborator, which means now he also has the access to this repository and he can directly clone this repos in his pc, make changes and push it directly
+
+How to clone or fork others code in your code. pull
+---------------------------------------------------
+1. make a repository
+2. search name and fork that code in your repo
+
+how to contribute in the open source 
+------------------------------------
+To contribute in open source doesn't mean that you are directly doing a change in the code itself, you can make change in the README file as well, it is also an open source contribution you learn a lot from it as well.
+
+I want to contribute open source in it 
+---------------------------------------
+you won't directly clone, you will fork it. the remote copy will be created in your github as well. click on fork button at right corner. the copy created in your repo. from other accounts repo. Now, you can make change in it.
+
+now fork repo to bring it into local
+------------------------------------
+copy the link - https://github.com/mayanknagle18/react-complete-guide-code.git
+
+- git clone https://github.com/mayanknagle18/react-complete-guide-code.git
+- cd react-complete-guide-code
+- ls (only one README file and selecting a file.jpg)
+changes in README.md file
+-------------------------
+- vim file_name => Readme file in vim itself
+- vim README.md
+
+in vim text editor
+------------------
+i => for insert text mode 
+esc => exist from text mode
+:wq => for closing vim editor
+
+- cat file_name => you can check your changes by cat command.
+- cat README.md
+
+If you want you can make a different branch and change inside it but for now im changing in the master branch.
+
+- git add README.md 
+- git commit -m "README.md updated"
+- git push
+
+then our commit is here, but this commit in the fork and my repo doesn't even know about it.
+so as a user you can make a pull request here.
+
+make a pull request:-
+---------------------
+in git mayanknagle18/react-complete-guide-code
+----------------------------------------------
+It says - This branch is 1 commit ahead of academind:master.
+So you want to merge it
+- go to contribute -> open pull request -> now you can make a pull request
+
+first check in check in which files you have made the changes, then
+- create pull request
+then you can write the messages that what you have changed, so example:- README.md updated  
+- create pull request
+now, pull request has been created and now it will come to me and I'll check what changes have you made in it. and should i implement these changes in my code or not.
+so, basically you are waiting here to merge with me, so now i have got  pull request here.
+
+- here it is a pull request
+- open and check what changes has he done here and should i merge it or not i will go to file change 
+- review changes
+leave a comment -> approve -> submit review
+now merge pull request -> confirm merge
 
 Question - 
 ----------
